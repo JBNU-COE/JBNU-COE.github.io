@@ -18,7 +18,7 @@ import { useLayoutResize } from '../hooks/useLayoutResize.jsx';
 
 import PartnerShowcase from './partnerSlider/PartnerShowcase.jsx';
 
-import CustomCalendar from './customCalendar/customCalendar.jsx';
+import MonthlyCalendar from '../notice/calendar/MonthlyCalendar.jsx';
 import { HiMenu } from 'react-icons/hi';
 
 const Home = () => {
@@ -27,53 +27,6 @@ const Home = () => {
   useLayoutResize();
   const [searchText, setSearchText] = useState('');
   const navigate = useNavigate();
-
-  // 샘플 이벤트 데이터
-  const eventsData = {
-    "2025-04-14": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-15": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-16": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-17": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" },
-      { title: "간식행사", dateRange: "4/17 ~ 4/17" }
-    ],
-    "2025-04-18": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-19": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-20": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-21": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-22": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-23": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-24": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-04-25": [
-      { title: "해동학습실 개방", dateRange: "4/14 ~ 4/25" }
-    ],
-    "2025-10-15": [
-      { title: "중간고사", description: "전공 시험 기간" }
-    ],
-    "2025-10-20": [
-      { title: "학생회 MT", description: "1박 2일", time: "09:00" }
-    ]
-  };
 
   // JS 강제 페이지 넘김(휠/키 이벤트 + transform) 해제: CSS scroll-snap만 사용
   
@@ -110,7 +63,7 @@ const Home = () => {
       <div className='third-screen'>
         {/* 툴바 + 행사 달력이 딱 한 화면에 나오도록 부탁드립니다. */}
         <div className='calender-container'>
-          <CustomCalendar eventsData={eventsData} />
+          <MonthlyCalendar />
         </div>
       </div>
     </div>
