@@ -7,7 +7,7 @@ function NoticeCard() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/notice');
+    navigate('/notice/announcement');
   };
 
   return (

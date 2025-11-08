@@ -98,7 +98,7 @@ function HeaderBar({ isMobile }) {
                 <ul>문의</ul>
                 {activeMenu === 'contact' && (
                   <div className="dropdown-container">
-                    <li><Link to="/contact/board-help">게시판 이용 문의</Link></li>
+                    <li><Link to="/contact/board-inquiry">게시판 이용 문의</Link></li>
                     <li><Link to="/contact/report">민원 접수</Link></li>
                   </div>
                 )}
