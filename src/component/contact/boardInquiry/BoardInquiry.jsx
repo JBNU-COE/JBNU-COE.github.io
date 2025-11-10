@@ -6,7 +6,7 @@ import './BoardInquiry.css';
 
 const BoardInquiry = () => {
   const kakaoUrl = 'https://open.kakao.com/o/s1TJTDYh'; // 실제 오픈 카카오톡 URL로 변경 필요
-  const email = 'example@jbnu.ac.kr';
+  const email = 'kjm010622@naver.com';
 
   const handleKakaoClick = () => {
     window.open(kakaoUrl, '_blank', 'noopener,noreferrer');

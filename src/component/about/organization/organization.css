@@ -2,18 +2,69 @@
 .org-page { padding: 2rem; margin-top: 10vh; color: #0b1526; }
 
 /* 상단(회장/부회장/집행위원장) */
-.org-top { position: relative; display: grid; gap: 1.25rem; justify-items: center; }
+.org-top { 
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  gap: 1.25rem; 
+  justify-items: center;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
 
-.org-leaders { position: relative; display: grid; gap: 1rem; width: 100%; max-width: 920px; grid-template-columns: repeat(2, minmax(0,1fr)); }
-.org-leader-card { background:#fff; border:2px solid #2955a6; border-radius: 12px; text-align:center; padding:0.75rem 1rem; }
-.org-leader-role { color:#2955a6; font-weight:800; }
-.org-leader-name { font-weight:900; font-size:1.75rem; }
+.org-leaders { 
+  position: relative; 
+  display: grid; 
+  gap: 1rem; 
+  width: 100%; 
+  grid-template-columns: repeat(2, minmax(0,1fr)); 
+}
 
-/* rail 제거에 따라 관련 스타일 삭제 */
+.org-leader-card { 
+  background:#fff; 
+  border:2px solid #2955a6; 
+  border-radius: 12px; 
+  text-align:center; 
+  padding:0.75rem 1rem; 
+}
 
-.org-chair { text-align:center; background:#fff; border:2px solid #2955a6; border-radius:1rem; padding:0.75rem 10rem; }
-.org-chair-title { color:#2955a6; font-weight:800; }
-.org-chair-name { font-weight:900; font-size:1.25rem; }
+.org-leader-role { 
+  color:#2955a6; 
+  font-weight:800; 
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.org-leader-name { 
+  font-weight:900; 
+  font-size:1.75rem; 
+}
+
+.org-chair { 
+  background:#fff; 
+  border:2px solid #2955a6; 
+  border-radius:1rem; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  text-align: center;
+}
+
+.org-chair-title { 
+  color:#2955a6; 
+  font-weight:800; 
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.org-chair-name { 
+  font-weight:900; 
+  font-size:1.25rem; 
+}
 
 /* 부서 그리드 */
 .org-depts {

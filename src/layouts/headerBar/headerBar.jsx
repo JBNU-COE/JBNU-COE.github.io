@@ -27,7 +27,7 @@ function HeaderBar({ isMobile }) {
   }, []);
 
   const p = (location.pathname || '').toLowerCase();
-  const isExempt = (p === '/' || p === '/about/intro');
+  const isExempt = (p === '/'); // /about/intro는 제외하여 다른 페이지와 동일하게 반응형 색상 적용
   const shouldBeBlueText = isAtTop && !isExempt;
 
   return (

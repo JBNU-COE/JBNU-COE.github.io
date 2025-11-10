@@ -69,6 +69,28 @@ html, body, #root {
   box-shadow: none;
 }
 
+/* 드롭다운이 있는 category-item도 동일한 스타일 유지 */
+.category-bar .category-item.dropdown-container {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0.8rem 1.2rem !important; /* category-item의 padding 유지 */
+  padding-bottom: 0.8rem !important; /* 드롭다운을 위한 여백은 category-item과 동일하게 */
+  display: flex !important; /* headerBar.css의 display: none 오버라이드 */
+  position: relative !important; /* headerBar.css의 position: absolute 오버라이드 */
+  top: auto !important;
+  left: auto !important;
+  box-shadow: none !important; /* headerBar.css의 box-shadow 제거 */
+  backdrop-filter: none !important; /* backdrop-filter 제거 */
+}
+
+.category-bar .category-item.dropdown-container:hover {
+  color: #c1c5ca;
+  background-color: transparent !important;
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
 /* 학생회 소개 버튼 클릭 가능 스타일 */
 .category-item .category-text[onClick] {
   cursor: pointer;
@@ -127,7 +149,11 @@ html, body, #root {
 /* 드롭다운 영역 설정 */
 .dropdown-container {
   position: relative;
-  display: none;
+  display: flex;
+}
+
+/* category-item과 함께 사용되지 않은 dropdown-container를 위한 기본 스타일 */
+.dropdown-container:not(.category-item) {
   padding-bottom: 10px !important;
 }
 
@@ -353,6 +379,7 @@ html, body, #root {
   .category-bar {
     padding: 1rem 1rem;
     gap: 1.5rem;
+    justify-content: center;
   }
 
   .category-item {
