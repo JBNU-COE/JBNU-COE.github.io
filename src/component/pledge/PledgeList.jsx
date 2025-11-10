@@ -8,7 +8,7 @@ function PledgeList({ pledges }) {
       <ul>
         {pledges.map((pledge, index) => (
           <li key={index} className="pledge-item">
-            <span className="pledge-bullet">•</span>
+            <span className="pledge-bullet">-</span>
             <span className="pledge-text">{pledge}</span>
           </li>
         ))}

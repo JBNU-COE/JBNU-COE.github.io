@@ -81,10 +81,18 @@
   
   .pledge-list h4 {
     font-size: 1.4rem;
+    border-bottom: none; /* 모바일에서 border-bottom 제거하여 선 겹침 방지 */
+    padding-bottom: 0.5rem; /* 패딩 조정 */
+  }
+  
+  .pledge-list h4::after {
+    bottom: 0; /* 위치 조정 */
+    height: 2px; /* 높이 조정 */
   }
   
   .pledge-item {
     padding: 0.8rem;
+    margin-bottom: 0.8rem; /* 항목 간 간격 조정 */
   }
   
   .pledge-text {
@@ -104,10 +112,20 @@
   
   .pledge-list h4 {
     font-size: 1.2rem;
+    border-bottom: none; /* 모바일에서 border-bottom 제거하여 선 겹침 방지 */
+    padding-bottom: 0.4rem; /* 패딩 조정 */
+    margin-bottom: 1rem; /* 하단 마진 조정 */
+  }
+  
+  .pledge-list h4::after {
+    bottom: 0; /* 위치 조정 */
+    height: 2px; /* 높이 조정 */
+    width: 50px; /* 너비 조정 */
   }
   
   .pledge-item {
     padding: 0.6rem;
+    margin-bottom: 0.6rem; /* 항목 간 간격 조정 */
   }
   
   .pledge-text {

@@ -497,27 +497,14 @@ html, body, #root {
     font-size: 1.1rem;
     padding-top: 0.5rem;
   }
-
-  .text-container p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .right-container p{
+    font-size: 0.8rem;
   }
-
-  .text-container .sign {
-    font-size: 1.1rem;
-  }
-
-  .text-container .quote {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .intro-list {
-    padding-left: 1.5rem;
-  }
-
-  .intro-list li {
+  .right-container .quote {
     font-size: 0.9rem;
+  }
+  .intro-list li {
+    font-size: 0.8rem;
   }
 }
 
