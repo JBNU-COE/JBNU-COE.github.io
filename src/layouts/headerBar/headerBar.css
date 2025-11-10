@@ -233,7 +233,7 @@
     .header-bar {
       position: fixed;       /* 고정 */
       top: 30px;             /* 모바일 topBar 높이(30px)에 맞춤 - 여백 없음 */
-      height: 10vh;          /* 고정 높이 */
+      height: 7vh;          /* 고정 높이 */
       width: 100%;
       flex-direction: row;
       align-items: center;

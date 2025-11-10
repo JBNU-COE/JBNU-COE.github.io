@@ -153,7 +153,7 @@ function HeaderBar({ isMobile }) {
                           <li><Link to="/notice/announcement" onClick={() => setMenuOpen(false)}>공지사항</Link></li>
                           <li><Link to="/notice/calendar" onClick={() => setMenuOpen(false)}>월별 행사</Link></li>
                           <li><Link to="/notice/study-support" onClick={() => setMenuOpen(false)}>학습필력</Link></li>
-                          <li><Link to="/notice/promises" onClick={() => setMenuOpen(false)}>공약 이행률</Link></li>
+                          <li><Link to="/notice/pledge" onClick={() => setMenuOpen(false)}>공약 이행률</Link></li>
                           <li><Link to="/notice/gallery" onClick={() => setMenuOpen(false)}>갤러리</Link></li>
                         </ul>
                       )}
