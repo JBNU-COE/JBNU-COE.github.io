@@ -162,7 +162,7 @@ function HeaderBar({ isMobile }) {
                       <button className={`mobile-nav-button ${activeMenu === 'benefits' ? 'active' : ''}`} onClick={() => toggleMenu('benefits')}>제휴 혜택</button>
                       {activeMenu === 'benefits' && (
                         <ul className="mobile-submenu">
-                          <li><Link to="/benefits/partners" onClick={() => setMenuOpen(false)}>제휴업체 리스트</Link></li>
+                          <li><Link to="/benefits" onClick={() => setMenuOpen(false)}>제휴업체 리스트</Link></li>
                         </ul>
                       )}
                     </li>

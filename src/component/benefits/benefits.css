@@ -351,7 +351,7 @@
   }
   
   .benefits-view-toggle {
-    top: calc(35px + 10vh); /* 모바일 topBar(35px) + headerBar(10vh) */
+    top: calc(7vh); /* 모바일 topBar(35px) + headerBar(10vh) */
     padding: 0.75rem 1rem;
     justify-content: center;
   }
@@ -364,10 +364,10 @@
 
 @media (max-width: 480px) {
   .benefits-page {
-    padding-top: calc(30px + 10vh); /* 작은 모바일 topBar(30px) + headerBar(10vh) */
+    padding-top: calc(0px + 10vh); /* 작은 모바일 topBar(30px) + headerBar(10vh) */
   }
   
   .benefits-view-toggle {
-    top: calc(30px + 10vh); /* 작은 모바일 topBar(30px) + headerBar(10vh) */
+    top: calc(0px + 10vh); /* 작은 모바일 topBar(30px) + headerBar(10vh) */
   }
 }
