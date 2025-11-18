@@ -102,6 +102,13 @@
   align-items: center;
   gap: 0.5rem;
   flex-shrink: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.instagram-container:hover {
+  opacity: 0.7;
 }
 
 .instagram-icon {
